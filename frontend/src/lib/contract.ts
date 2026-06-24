@@ -85,22 +85,16 @@ export async function invokeContract(
     throw new Error(`Transaction submission failed: ${sendResult.errorResult?.toString()}`);
   }
 
-  // Poll for confirmation.
-  let getResult = await server.getTransaction(sendResult.hash);
-  const start = Date.now();
-  while (getResult.status === SorobanRpc.Api.GetTransactionStatus.NOT_FOUND) {
-    if (Date.now() - start > 30_000) {
-      throw new Error("Timed out waiting for transaction confirmation.");
-    }
-    await new Promise((r) => setTimeout(r, 1500));
-    getResult = await server.getTransaction(sendResult.hash);
+  const finalResult = await server.pollTransaction(sendResult.hash, {
+    attempts: 20,
+    sleepStrategy: () => 1500,
+  });
+
+  if (finalResult.status !== SorobanRpc.Api.GetTransactionStatus.SUCCESS) {
+    throw new Error(`Transaction failed on-chain: ${finalResult.status}`);
   }
 
-  if (getResult.status !== SorobanRpc.Api.GetTransactionStatus.SUCCESS) {
-    throw new Error(`Transaction failed on-chain: ${getResult.status}`);
-  }
-
-  const returnValue = getResult.resultMetaXdr
+  const returnValue = finalResult.resultMetaXdr
     ?.v3()
     .sorobanMeta()
     ?.returnValue();

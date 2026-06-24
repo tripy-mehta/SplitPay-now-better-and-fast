@@ -133,6 +133,3 @@ completed an on-chain settlement on testnet. See
 [`docs/user-feedback-summary.md`](docs/user-feedback-summary.md) for the
 collected responses.
 
-## License
-
-MIT

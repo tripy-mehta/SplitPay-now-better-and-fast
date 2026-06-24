@@ -309,10 +309,6 @@ impl SplitPayContract {
         // Greedy matching: repeatedly take the largest debtor and largest
         // creditor, settle as much as possible between them, repeat.
         // Bounded loop (group sizes are small) — no unbounded recursion.
-        let mut d_idx: Vec<u32> = vec![&env];
-        for i in 0..debtors.len() {
-            d_idx.push_back(i);
-        }
 
         loop {
             // Find largest remaining debtor and creditor.

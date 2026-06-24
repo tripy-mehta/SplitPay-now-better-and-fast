@@ -77,7 +77,7 @@ export async function invokeContract(
   }
 
   const prepared = await server.prepareTransaction(tx);
-  const signedXdr = await signTransactionXdr(prepared.toXDR());
+  const signedXdr = await signTransactionXdr(prepared.toXDR(), sourcePublicKey);
   const signedTx = TransactionBuilder.fromXDR(signedXdr, NETWORK_PASSPHRASE);
 
   const sendResult = await server.sendTransaction(signedTx);

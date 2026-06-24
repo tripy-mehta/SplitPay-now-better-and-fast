@@ -4,6 +4,7 @@ import {
   StellarWalletsKit,
   WalletNetwork,
   FREIGHTER_ID,
+  FreighterModule,
   ISupportedWallet,
 } from "@creit.tech/stellar-wallets-kit";
 import { NETWORK_PASSPHRASE } from "./config";
@@ -17,7 +18,7 @@ export function getWalletKit(): StellarWalletsKit {
         ? WalletNetwork.TESTNET
         : WalletNetwork.PUBLIC,
       selectedWalletId: FREIGHTER_ID,
-      modules: [], // modules are registered lazily by the kit on testnet/public builds
+      modules: [new FreighterModule()],
     });
   }
   return kitInstance;
@@ -61,11 +62,12 @@ export async function connectWallet(): Promise<string> {
   });
 }
 
-export async function signTransactionXdr(xdr: string): Promise<string> {
+export async function signTransactionXdr(xdr: string, address: string): Promise<string> {
   const kit = getWalletKit();
   try {
     const { signedTxXdr } = await kit.signTransaction(xdr, {
       networkPassphrase: NETWORK_PASSPHRASE,
+      address,
     });
     return signedTxXdr;
   } catch (err) {

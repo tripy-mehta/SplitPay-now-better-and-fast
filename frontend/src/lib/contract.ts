@@ -85,7 +85,7 @@ export async function invokeContract(
     throw new Error(`Transaction submission failed: ${sendResult.errorResult?.toString()}`);
   }
 
-  const finalResult = await server.pollTransaction(sendResult.hash, {
+  const finalResult = await (server as any).pollTransaction(sendResult.hash, {
     attempts: 20,
     sleepStrategy: () => 1500,
   });

@@ -12,6 +12,7 @@
     "@creit.tech/stellar-wallets-kit": "^1.7.2",
     "@sentry/nextjs": "^8.45.0",
     "@stellar/stellar-sdk": "^15.0.0",
+    "dotenv": "^17.4.2",
     "next": "14.2.18",
     "posthog-js": "^1.184.0",
     "react": "^18.3.1",

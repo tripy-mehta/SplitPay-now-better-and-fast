@@ -28,8 +28,8 @@ export default function HomePage() {
       const groupId = await createGroup(address, groupName.trim() || "Untitled group");
       track("group_created", { groupId: groupId.toString() });
       router.push(`/group/${groupId}`);
-    } catch (err) {
-      setFormError("Couldn't create the group. Check your connection and try again.");
+    } catch (err: any) {
+      setFormError(err?.message || "Couldn't create the group. Check your connection and try again.");
       Sentry.captureException(err);
     } finally {
       setSubmitting(false);
@@ -50,8 +50,8 @@ export default function HomePage() {
       await joinGroup(BigInt(id), address);
       track("group_joined", { groupId: id });
       router.push(`/group/${id}`);
-    } catch (err) {
-      setFormError("Couldn't join that group. Double check the ID, or you may already be a member.");
+    } catch (err: any) {
+      setFormError(err?.message || "Couldn't join that group. Double check the ID, or you may already be a member.");
       Sentry.captureException(err);
     } finally {
       setSubmitting(false);
@@ -124,7 +124,7 @@ export default function HomePage() {
               value={groupName}
               onChange={(e) => setGroupName(e.target.value)}
               placeholder="Osaka Trip"
-              className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-white"
+              className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-ink/5"
               maxLength={64}
             />
             <button
@@ -148,7 +148,7 @@ export default function HomePage() {
               onChange={(e) => setJoinGroupId(e.target.value)}
               placeholder="e.g. 4"
               inputMode="numeric"
-              className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-white"
+              className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-ink/5"
             />
             <button
               type="submit"

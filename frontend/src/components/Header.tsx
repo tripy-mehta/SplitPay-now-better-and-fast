@@ -5,7 +5,7 @@ import { useWallet } from "@/hooks/useWallet";
 import { truncateAddress } from "@/lib/format";
 
 export function Header() {
-  const { address, connecting, error, connect, disconnect, fundWithFriendbot, funding } =
+  const { address, connecting, error, connect, disconnect, fundWithFriendbot, funding, balance } =
     useWallet();
   const [showFriendbotHint, setShowFriendbotHint] = useState(false);
 
@@ -27,6 +27,12 @@ export function Header() {
             >
               Need testnet XLM?
             </button>
+            {balance !== null && (
+              <span className="ledger-amount text-sm font-semibold bg-ledger-50 text-ledger-600 rounded-md px-3 py-1.5 border border-ledger-100 flex items-center gap-1.5 dark:bg-ledger-900/20 dark:text-ledger-400 dark:border-ledger-900/30">
+                <span className="w-1.5 h-1.5 rounded-full bg-ledger-400"></span>
+                {balance} XLM
+              </span>
+            )}
             <span className="ledger-amount text-sm bg-ink/5 rounded-md px-3 py-1.5">
               {truncateAddress(address)}
             </span>

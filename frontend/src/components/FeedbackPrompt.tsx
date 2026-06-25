@@ -79,7 +79,7 @@ export function FeedbackPrompt({ onDismiss }: { onDismiss: () => void }) {
               onChange={(e) => setComment(e.target.value)}
               placeholder="Anything confusing or missing? (optional)"
               rows={2}
-              className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-white mb-4 resize-none"
+              className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-ink/5 mb-4 resize-none"
             />
 
             <div className="flex gap-2">

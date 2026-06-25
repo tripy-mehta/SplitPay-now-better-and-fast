@@ -11,7 +11,7 @@ import {
 } from "react";
 import { connectWallet, WalletNotInstalledError, WalletRejectedError } from "@/lib/wallet";
 import { track, identifyWallet } from "@/lib/analytics";
-import { FRIENDBOT_URL } from "@/lib/config";
+import { FRIENDBOT_URL, HORIZON_URL } from "@/lib/config";
 
 type WalletState = {
   address: string | null;
@@ -21,6 +21,8 @@ type WalletState = {
   disconnect: () => void;
   fundWithFriendbot: () => Promise<void>;
   funding: boolean;
+  balance: string | null;
+  refreshBalance: () => Promise<void>;
 };
 
 const WalletContext = createContext<WalletState | null>(null);
@@ -32,6 +34,33 @@ export function WalletProvider({ children }: { children: ReactNode }) {
   const [connecting, setConnecting] = useState(false);
   const [funding, setFunding] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [balance, setBalance] = useState<string | null>(null);
+
+  const refreshBalance = useCallback(async () => {
+    if (!address) {
+      setBalance(null);
+      return;
+    }
+    try {
+      const res = await fetch(`${HORIZON_URL}/accounts/${address}`);
+      if (res.ok) {
+        const data = await res.json();
+        const native = data.balances.find((b: any) => b.asset_type === "native");
+        if (native) {
+          setBalance(parseFloat(native.balance).toFixed(2));
+        } else {
+          setBalance("0.00");
+        }
+      } else if (res.status === 404) {
+        setBalance("0.00 (Unfunded)");
+      } else {
+        setBalance("—");
+      }
+    } catch (err) {
+      console.error("Failed to fetch balance:", err);
+      setBalance("—");
+    }
+  }, [address]);
 
   // Restore last session's address for convenience (read-only UI hint;
   // every state-changing action still requires a fresh wallet signature).
@@ -39,6 +68,11 @@ export function WalletProvider({ children }: { children: ReactNode }) {
     const saved = window.sessionStorage.getItem(STORAGE_KEY);
     if (saved) setAddress(saved);
   }, []);
+
+  // Fetch balance automatically when address changes
+  useEffect(() => {
+    refreshBalance();
+  }, [address, refreshBalance]);
 
   const connect = useCallback(async () => {
     setConnecting(true);
@@ -78,16 +112,29 @@ export function WalletProvider({ children }: { children: ReactNode }) {
         // 400 usually means "already funded" — not a real failure for our purposes.
         throw new Error("Friendbot request failed.");
       }
+      // Wait a moment for testnet ledger to apply before refreshing balance
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      await refreshBalance();
     } catch {
       setError("Couldn't reach Friendbot. You may already have testnet XLM, or try again shortly.");
     } finally {
       setFunding(false);
     }
-  }, [address]);
+  }, [address, refreshBalance]);
 
   const value = useMemo(
-    () => ({ address, connecting, error, connect, disconnect, fundWithFriendbot, funding }),
-    [address, connecting, error, connect, disconnect, fundWithFriendbot, funding]
+    () => ({
+      address,
+      connecting,
+      error,
+      connect,
+      disconnect,
+      fundWithFriendbot,
+      funding,
+      balance,
+      refreshBalance,
+    }),
+    [address, connecting, error, connect, disconnect, fundWithFriendbot, funding, balance, refreshBalance]
   );
 
   return <WalletContext.Provider value={value}>{children}</WalletContext.Provider>;

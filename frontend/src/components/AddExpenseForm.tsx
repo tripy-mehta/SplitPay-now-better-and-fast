@@ -87,7 +87,7 @@ export function AddExpenseForm({
           onChange={(e) => setDescription(e.target.value)}
           placeholder="Dinner at the izakaya"
           maxLength={80}
-          className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-white"
+          className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-ink/5"
         />
       </div>
 
@@ -101,7 +101,7 @@ export function AddExpenseForm({
           onChange={(e) => setAmount(e.target.value)}
           placeholder="0.00"
           inputMode="decimal"
-          className="w-full border border-line rounded-md px-3 py-2 text-sm ledger-amount focus-ring bg-white"
+          className="w-full border border-line rounded-md px-3 py-2 text-sm ledger-amount focus-ring bg-ink/5"
         />
       </div>
 

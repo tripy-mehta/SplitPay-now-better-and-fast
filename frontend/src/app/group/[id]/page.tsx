@@ -16,7 +16,7 @@ import * as Sentry from "@sentry/nextjs";
 export default function GroupPage() {
   const params = useParams<{ id: string }>();
   const groupId = BigInt(params.id);
-  const { address, connect } = useWallet();
+  const { address, connect, refreshBalance } = useWallet();
 
   const [balances, setBalances] = useState<BalanceDto[]>([]);
   const [expenses, setExpenses] = useState<ExpenseDto[]>([]);
@@ -36,13 +36,15 @@ export default function GroupPage() {
       ]);
       setBalances(b);
       setExpenses(e);
+      // Refresh wallet balance to match new state
+      refreshBalance();
     } catch (err) {
       setError("Couldn't load this group. It may not exist, or the network is having trouble.");
       Sentry.captureException(err);
     } finally {
       setLoading(false);
     }
-  }, [address, groupId]);
+  }, [address, groupId, refreshBalance]);
 
   useEffect(() => {
     load();

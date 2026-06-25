@@ -112,10 +112,9 @@ export async function invokeContract(
     throw new Error(`Transaction failed on-chain: ${finalResult.status}`);
   }
 
-  const returnValue = finalResult.resultMetaXdr
-    ?.v3()
-    .sorobanMeta()
-    ?.returnValue();
+  // Use returnValue directly — avoids manually decoding resultMetaXdr
+  // which breaks on Protocol 22+ (XDR v4) with older SDK versions.
+  const returnValue = (finalResult as any).returnValue;
   return returnValue ? scValToNative(returnValue) : null;
 }
 

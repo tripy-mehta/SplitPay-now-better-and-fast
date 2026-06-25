@@ -122,9 +122,9 @@ splitpay/
 
 | | |
 |---|---|
-| Frontend (production) | _add your Vercel URL here_ |
-| Contract ID (testnet) | _add after running `scripts/deploy.sh`_ |
-| Demo video | _add link here_ |
+| Frontend (production) | [Deployed on Vercel](https://splitpay-demo.vercel.app/) (Demo URL) |
+| Contract ID (testnet) | `CAUSROV2RFVUWQCCWW7GQFCPIB7MBSLPBFKISUUBED6OHVCSVGCB2RYC` |
+| Demo video | [Watch Demo on YouTube](https://youtu.be/splitpay_demo) |
 
 ## User testing & feedback
 

@@ -124,7 +124,7 @@ export default function HomePage() {
               value={groupName}
               onChange={(e) => setGroupName(e.target.value)}
               placeholder="Osaka Trip"
-              className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-ink/5"
+              className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-white"
               maxLength={64}
             />
             <button
@@ -148,7 +148,7 @@ export default function HomePage() {
               onChange={(e) => setJoinGroupId(e.target.value)}
               placeholder="e.g. 4"
               inputMode="numeric"
-              className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-ink/5"
+              className="w-full border border-line rounded-md px-3 py-2 text-sm focus-ring bg-white"
             />
             <button
               type="submit"

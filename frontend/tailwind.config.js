@@ -7,22 +7,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ink: "#F3F4F6",
-        paper: "#0D0E12",
+        ink: "#0E1116",
+        paper: "#F7F6F2",
         ledger: {
-          50: "#122018",
-          100: "#183825",
-          400: "#34C759",
-          600: "#30B04E",
-          900: "#A1F0C0",
+          50: "#F2F7F4",
+          100: "#DCEFE3",
+          400: "#3FA66B",
+          600: "#1F7A4D",
+          900: "#0F3A26",
         },
         owe: {
-          100: "#381616",
-          400: "#FF453A",
-          600: "#FF5E55",
+          100: "#FCE7E6",
+          400: "#E0584C",
+          600: "#B83A30",
         },
-        brass: "#E5C07B",
-        line: "#1F2430",
+        brass: "#C9A24B",
+        line: "#D8D4CB",
       },
       fontFamily: {
         display: ["var(--font-display)"],

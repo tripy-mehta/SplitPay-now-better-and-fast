@@ -18,6 +18,9 @@ export function Header() {
             Testnet
           </span>
         </a>
+        <a href="/feedback" className="hidden sm:block text-sm font-medium hover:text-brass ml-6 mr-auto">
+          Feedback
+        </a>
 
         {address ? (
           <div className="flex items-center gap-3">

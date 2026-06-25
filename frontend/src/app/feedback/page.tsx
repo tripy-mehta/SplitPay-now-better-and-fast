@@ -5,7 +5,7 @@ import { Header } from "@/components/Header";
 const feedbacks = [
   {
     id: 1,
-    name: "Alex M.",
+    name: "Aarav M.",
     role: "Study Abroad Student",
     comment: "SplitPay made our Europe trip so much easier to handle. Settling in XLM instantly saved us huge conversion fees!",
     rating: 5,
@@ -13,7 +13,7 @@ const feedbacks = [
   },
   {
     id: 2,
-    name: "Sarah T.",
+    name: "Priya T.",
     role: "Freelancer",
     comment: "The debt-simplification algorithm is magic. We had 8 people owing each other, and it reduced it to just 3 transfers.",
     rating: 5,
@@ -21,7 +21,7 @@ const feedbacks = [
   },
   {
     id: 3,
-    name: "David K.",
+    name: "Rahul K.",
     role: "Remote Team Lead",
     comment: "Finally, a way to settle team lunches across 4 different timezones without dealing with banks.",
     rating: 4,
@@ -29,7 +29,7 @@ const feedbacks = [
   },
   {
     id: 4,
-    name: "Elena R.",
+    name: "Neha R.",
     role: "Travel Blogger",
     comment: "Clean UI and very intuitive. Connecting Freighter was seamless. Highly recommend for group trips.",
     rating: 5,
@@ -37,7 +37,7 @@ const feedbacks = [
   },
   {
     id: 5,
-    name: "James L.",
+    name: "Vikram L.",
     role: "Event Organizer",
     comment: "Works perfectly on mobile. We logged all expenses during the music festival and settled on the train ride home.",
     rating: 5,
@@ -45,7 +45,7 @@ const feedbacks = [
   },
   {
     id: 6,
-    name: "Nina P.",
+    name: "Ananya P.",
     role: "Digital Nomad",
     comment: "I love that it runs on Stellar. The transactions cost fractions of a cent and are instant.",
     rating: 4,
@@ -53,7 +53,7 @@ const feedbacks = [
   },
   {
     id: 7,
-    name: "Mark W.",
+    name: "Arjun W.",
     role: "Roommate",
     comment: "We use this for our apartment bills now. The smart contract ensures nobody can cheat the ledger.",
     rating: 5,

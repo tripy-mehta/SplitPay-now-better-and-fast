@@ -122,9 +122,28 @@ splitpay/
 
 | | |
 |---|---|
-| Frontend (production) | [Deployed on Vercel](https://splitpay-demo.vercel.app/) (Demo URL) |
+| Frontend (production) | [SplitPay Live App](https://split-pay-cross-border-group-expens.vercel.app/) |
 | Contract ID (testnet) | `CAUSROV2RFVUWQCCWW7GQFCPIB7MBSLPBFKISUUBED6OHVCSVGCB2RYC` |
-| Demo video | [Watch Demo on YouTube](https://youtu.be/splitpay_demo) |
+| Demo video | [Watch Demo on Google Drive](https://drive.google.com/file/d/14GFumRM7NkBvjzj_LiD4gdWCOIdnYa3u/view?usp=sharing) |
+
+## App Screenshots
+
+Below are screenshots showcasing the product UI, mobile responsive design, and core user flows:
+
+<div align="center">
+  <img src="images/landing%20page.png" alt="Landing Page" width="400"/>
+  <img src="images/creating%20group.png" alt="Creating Group" width="400"/>
+</div>
+<br/>
+<div align="center">
+  <img src="images/joinging%20grp.png" alt="Joining Group" width="400"/>
+  <img src="images/shared%20expense.png" alt="Shared Expense" width="400"/>
+</div>
+<br/>
+<div align="center">
+  <img src="images/expense%20history.png" alt="Expense History" width="400"/>
+  <img src="images/feedback%20summary.png" alt="Feedback Summary" width="400"/>
+</div>
 
 ## User testing & feedback
 

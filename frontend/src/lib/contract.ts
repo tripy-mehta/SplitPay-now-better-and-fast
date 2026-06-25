@@ -85,10 +85,28 @@ export async function invokeContract(
     throw new Error(`Transaction submission failed: ${sendResult.errorResult?.toString()}`);
   }
 
-  const finalResult = await (server as any).pollTransaction(sendResult.hash, {
-    attempts: 20,
-    sleepStrategy: () => 1500,
-  });
+  // Poll for transaction finality (replaces the removed pollTransaction API)
+  const MAX_ATTEMPTS = 20;
+  const POLL_INTERVAL_MS = 1500;
+  let finalResult: Awaited<ReturnType<typeof server.getTransaction>> | null = null;
+
+  for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+    await new Promise((resolve) => setTimeout(resolve, POLL_INTERVAL_MS));
+    const txResult = await server.getTransaction(sendResult.hash);
+
+    if (txResult.status === SorobanRpc.Api.GetTransactionStatus.NOT_FOUND) {
+      // Still pending — keep polling
+      continue;
+    }
+
+    // Terminal state (SUCCESS or FAILED)
+    finalResult = txResult;
+    break;
+  }
+
+  if (!finalResult) {
+    throw new Error("Transaction timed out waiting for confirmation.");
+  }
 
   if (finalResult.status !== SorobanRpc.Api.GetTransactionStatus.SUCCESS) {
     throw new Error(`Transaction failed on-chain: ${finalResult.status}`);

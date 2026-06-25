@@ -65,7 +65,7 @@ export default function FeedbackPage() {
   return (
     <main>
       <Header />
-      <div className="mx-auto max-w-3xl px-5 py-12">
+      <div className="mx-auto max-w-5xl px-5 py-12">
         <section className="mb-10">
           <p className="text-xs uppercase tracking-widest text-brass font-medium mb-3">
             User Testimonials
@@ -78,7 +78,7 @@ export default function FeedbackPage() {
           </p>
         </section>
 
-        <div className="grid gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {feedbacks.map((fb) => (
             <div key={fb.id} className="border border-line rounded-lg p-6 bg-white shadow-sm">
               <div className="flex justify-between items-start mb-4">

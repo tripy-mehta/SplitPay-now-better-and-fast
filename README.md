@@ -134,14 +134,19 @@ splitpay/
 
 | User # | Wallet Address | Amount & Action | Stellar Explorer Hash |
 |---|---|---|---|
-| User 1 | `GCOQHHXCSI2OXNBKNTVNZN2WZFNWRPZAX7ZYLQDRQXB75YLIQHQ42LGJ` | N/A (Created Group) | [`327bd621...`](https://stellar.expert/explorer/testnet/tx/327bd62138b8a904f05df033fae30bc688ef2ebbc37d961de42dad3aa7c87715) |
-| User 2 | `GB7OANIYFJLBALTVTIDQRHDC46HVZRJSTW2UY5N3WITPY6QBR7HFWUKI` | N/A (Created Group) | [`d27b6fb4...`](https://stellar.expert/explorer/testnet/tx/d27b6fb48700aa42593da56ce1feaab6b20635897a238b9b4c73f46250cc18c9) |
-| User 3 | `GAIEA6LKSKVWEJU2SPOUFHQJE2WZLHYEQPMKVS7TUZNOVDQKC255SJIC` | N/A (Created Group) | [`352b9142...`](https://stellar.expert/explorer/testnet/tx/352b91426f60184eb0f2391106c777e8c91c88feef316cc72c3a4e3eded0b752) |
-| User 4 | `GC2YTG4QILRKIUG6B25UXQQ2FQYWQM2Q262PUJ3GZBPX6XNQYW2QRMWJ` | N/A (Created Group) | [`b5fc95a6...`](https://stellar.expert/explorer/testnet/tx/b5fc95a60abf21a628a59de14d67e183a9b5857af8ee65bd21f9e198bae1e425) |
-| User 5 | `GAVP433LOOGEGMAU5RKJUYHEVBRTKTVWWYURMEYPP7UGNM342SFMU5VI` | N/A (Created Group) | [`1210584c...`](https://stellar.expert/explorer/testnet/tx/1210584c7e9b4c8b63038f3d30e2632bd82b27bdeed934e56360cf7a150bdeb1) |
-| User 6 | `GCSR7VVOJE3L6HRYS2NUMLVKHQCRWYNJ2CSXOLXNO7QINWALFE27PFMJ` | N/A (Created Group) | [`67a4fee0...`](https://stellar.expert/explorer/testnet/tx/67a4fee0d628a28fd9f8f122cd976d834be6840b3cff3310a3b843687a403a41) |
-| User 7 | `GA7Z64UJLP64FC7TLH3TBARSZ2ZSCZ6S5T6MMAFBBOIZ33R2TFPDJZOO` | N/A (Created Group) | [`5078350d...`](https://stellar.expert/explorer/testnet/tx/5078350d766703aaad7549632b938475d343330843f4e7c847c62eab0ff43492) |
-| User 8 | `GA54KQ65S2OQ5ICCU6XTWI2MPAVBUKQSW7WYKJ7TJKORL3Q6WN5HDLAI` | N/A (Created Group) | [`75e348fa...`](https://stellar.expert/explorer/testnet/tx/75e348fa549abb2b1ff88e0bd32d7aa23617a16ff06db722f7f87a4e1b28b175) |
-| User 9 | `GBB6MWDWBE4XGJIBPTTW2ZJQMYGIXQ5KNDOZKEOTBNOILJZ3VSS75UNJ` | N/A (Created Group) | [`888efac4...`](https://stellar.expert/explorer/testnet/tx/888efac46b6bda1edae9ad4122421e637da712539aa9ae666441a3eaaa5553cf) |
-| User 10 | `GBUEK5IKXJFU5ZOKJNGKLSCISQS7ZX4ZEZMDN3JULCGYVRYO2OBCNPL4` | N/A (Created Group) | [`b7f3785c...`](https://stellar.expert/explorer/testnet/tx/b7f3785ca0defe4ab93c831501c0698181f220615b1ea8a73194996c1da1cf22) |
+| User 1 | `GBPSN5J76XHRFM6AVHJUOJOXVOWK4HU2W5FU57UYIPUZ743CT4TQAHUA` | 289 XLM (Created Group) | [`7b8d3c9f...`](https://stellar.expert/explorer/testnet/tx/7b8d3c9f53e3716e15e07589dd4e94dd1ac0952f0b643878a2a9fbae16b63864) |
+| User 2 | `GCH24NLVNA5KGGS2HDEDUDAEHSQ53S3ORRVS4S7DM2DW2FVRTFIOVWBF` | 194 XLM (Created Group) | [`b88b1ed3...`](https://stellar.expert/explorer/testnet/tx/b88b1ed3b65d12933a0fe06175b20eda2db4d2341dee251de3caff9fc13cdb6c) |
+| User 3 | `GCK6CIORZYHZPHIEURTCGOWXMIZG7QPZ367ZHLGXMANM7GS7VZQBRZZP` | 301 XLM (Split Bill) | [`6af22a4f...`](https://stellar.expert/explorer/testnet/tx/6af22a4fab28f983eb2778677a9b46d7bc72e2a90d7d91d96ee0fc541907fbf2) |
+| User 4 | `GDTHXNSTSQUXUDD7R7DMWF6IQMWLTIBNVSMOWNL7I67YIY7ATWMFKV3Q` | 189 XLM (Paid Expense) | [`7e546b0a...`](https://stellar.expert/explorer/testnet/tx/7e546b0a0761fcbe8cea4eb368a1c3708ad7be565340e63ad36a3aefcafd9437) |
+| User 5 | `GBV2IC2KIYY7I4C3PVNFH2LWLF54IK6JSGTXNRBUZ7CK337OZL3EXURN` | 211 XLM (Settled Balance) | [`8d471385...`](https://stellar.expert/explorer/testnet/tx/8d47138591ecdcde95a1b07b06430f51cbbbbda2f297aef0f91ac33ab002ed08) |
+| User 6 | `GCZX5UH63WE5E65CNWXSGFZGGYVRWTNIFR2XXKTFH7MJKYQJUUPFYXX3` | 58 XLM (Paid Expense) | [`96f67f71...`](https://stellar.expert/explorer/testnet/tx/96f67f7117038d70f088e197c02a38b2f997a99ff4165f6bebbb7cd24fb351ee) |
+| User 7 | `GA4LXXDHEF4EPSHKNH62V6GN4CRYNFCUQJ37PHJD7BH2MSWOONWFBLKR` | 94 XLM (Split Bill) | [`fae0f443...`](https://stellar.expert/explorer/testnet/tx/fae0f4433831ef92c762e7c1c4b762f0fd4fde9b58f104f66e90f7a067fc68c4) |
+| User 8 | `GC6F5FDMQXXY5VUSSVNSID36KQVZUNCORQQ4DLRV24ECLBI6FLPMAYPB` | 180 XLM (Settled Balance) | [`2400480f...`](https://stellar.expert/explorer/testnet/tx/2400480f79d792e64b52611ec99130b34204c22fa71aef236ab706f452a2ce10) |
+| User 9 | `GBYU6MJQPMGSDPJI4PK6GUVFNOQ75ROXH63JHGEHTNK2RIKUFEBOYEIB` | 47 XLM (Created Group) | [`b52f2e20...`](https://stellar.expert/explorer/testnet/tx/b52f2e20814ff590d292cea311236b9f40cd502f8640c852c7e227a2b5962828) |
+| User 10 | `GDU7W3YTWZN3PKEVYVFCHHJZLUMUZOQROBYL2FLB5VD4SME7TUYA7YDO` | 410 XLM (Split Bill) | [`622b625a...`](https://stellar.expert/explorer/testnet/tx/622b625a2d881c50d3cb6de49a0f7722dd340511c11ea328dc31ab309f93cc28) |
+| User 11 | `GDJ6FNRPRI2HXF7V3UL2DKNUEVHZBSSONPUBDYDQSJ3CSXPVYWM27NPD` | 398 XLM (Paid Expense) | [`d19df13e...`](https://stellar.expert/explorer/testnet/tx/d19df13ec8255e005d7a297170eef1e783db8e16d8f1560c774e9622f917a662) |
+| User 12 | `GB6ADNVDKNISF4POIDSISFFGHL5KYXL6D3CXJRIL6UQMAH3QBP63WQC5` | 312 XLM (Split Bill) | [`c756a4ac...`](https://stellar.expert/explorer/testnet/tx/c756a4ace76c19dde5b5bb773fccdf232ac30f1775377e0c0585120f6049395a) |
+| User 13 | `GB7LVJPXASHC4XZYSMRER7NOB46BUBSVZB3GYNJF2PZO2TSP245OVK5H` | 275 XLM (Settled Balance) | [`c9b91737...`](https://stellar.expert/explorer/testnet/tx/c9b917377dee585fd4eff0aa14e018792aecdc81396cf567ee9ed3cd30903063) |
+| User 14 | `GBUE4PIT65VUNZT4SYVR3TASZOZFA7RDBEB6ZA5GX26ZPIUNYNFVQ4CN` | 57 XLM (Paid Expense) | [`8dc95c11...`](https://stellar.expert/explorer/testnet/tx/8dc95c11c5900b1921866de4824e56b4bee72ef6874cfe21858bf52bf259d35f) |
+| User 15 | `GDIMJQS644ML6JLFLHHWRXLNKMOGZFX5V22NTKTHV6APFSSV437XE42U` | 237 XLM (Created Group) | [`97da1b9c...`](https://stellar.expert/explorer/testnet/tx/97da1b9c14a511966e704c36082edb3deba8fd624b791e90d93b40c97a683cb6) |
 

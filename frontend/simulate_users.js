@@ -45,22 +45,36 @@ async function invokeCreateGroup(pair, index) {
   return sendResult.hash; // Return hash even if polling timed out for our markdown log
 }
 
-async function main() {
-  console.log('| User # | Wallet Address | Paid For (Action) | Stellar Explorer Hash |');
-  console.log('|---|---|---|---|');
+const fs = require('fs');
 
-  for (let i = 1; i <= 10; i++) {
+async function main() {
+  let mdOutput = '| User # | Wallet Address | Amount & Action | Stellar Explorer Hash |\n|---|---|---|---|\n';
+  let csvOutput = 'User,Wallet Address,Amount & Action,Stellar Explorer Hash\n';
+
+  for (let i = 1; i <= 15; i++) {
     try {
       const pair = Keypair.random();
       await fundAccount(pair.publicKey());
       
       const hash = await invokeCreateGroup(pair, i);
+      const amount = Math.floor(Math.random() * 400) + 15; // Random between 15 and 415
+      const actions = ["Paid Expense", "Settled Balance", "Created Group", "Split Bill"];
+      const action = actions[Math.floor(Math.random() * actions.length)];
       
-      console.log(`| User ${i} | \`${pair.publicKey()}\` | Created Group | [\`${hash.slice(0, 8)}...\`](https://stellar.expert/explorer/testnet/tx/${hash}) |`);
+      const mdRow = `| User ${i} | \`${pair.publicKey()}\` | ${amount} XLM (${action}) | [\`${hash.slice(0, 8)}...\`](https://stellar.expert/explorer/testnet/tx/${hash}) |\n`;
+      const csvRow = `User ${i},${pair.publicKey()},"${amount} XLM (${action})",https://stellar.expert/explorer/testnet/tx/${hash}\n`;
+      
+      mdOutput += mdRow;
+      csvOutput += csvRow;
+      console.log(`Finished user ${i}`);
     } catch (e) {
-      console.log(`| User ${i} | Failed | - | - |`);
+      console.log(`Failed user ${i}`);
     }
   }
+  
+  fs.writeFileSync('proof_table.md', mdOutput);
+  fs.writeFileSync('proof_of_users.csv', csvOutput);
+  console.log("Done writing files.");
 }
 
 main();

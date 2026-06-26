@@ -93,7 +93,10 @@ We actively listened to our users and improved the product based on their feedba
 | User 3 | `GCK6C...RZZP` | "The app lacks error handling on bad inputs." | Added Sentry monitoring and UI alerts | [Commit Link] |
 | User 5 | `GBV2I...XURN` | "Wish it was easier to see who owes what." | Improved Debt simplification algorithm | [Commit Link] |
 
-### Proof of 10+ Users (On-Chain Interactions)
+### Proof of 10+ Users
+
+A complete, machine-readable log of these interactions with transaction hashes, timestamps, and on-chain evidence is provided in the **[proof_of_interactions.json](proof_of_interactions.json)** file in this repository.
+ (On-Chain Interactions)
 
 | User # | Wallet Address | Amount & Action | Stellar Explorer Hash |
 |---|---|---|---|
@@ -224,6 +227,9 @@ Below are screenshots showcasing the product UI, mobile responsive design, and c
 10+ real users connected Freighter, joined a group, logged an expense, and completed an on-chain settlement on testnet. See [`docs/user-feedback-summary.md`](docs/user-feedback-summary.md) for the collected responses.
 
 ### Proof of 10+ Users
+
+A complete, machine-readable log of these interactions with transaction hashes, timestamps, and on-chain evidence is provided in the **[proof_of_interactions.json](proof_of_interactions.json)** file in this repository.
+
 
 | User # | Wallet Address | Amount & Action | Stellar Explorer Hash |
 |---|---|---|---|

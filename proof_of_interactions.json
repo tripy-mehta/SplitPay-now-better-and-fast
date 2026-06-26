@@ -1,0 +1,151 @@
+[
+  {
+    "user_id": 1,
+    "name": "Alex Chen",
+    "wallet_address": "GBBD47IF6LWK7P7MDEVSCWTTCJMCRFW3U477XG3D7XN62LZM3K2RQ4L4",
+    "network": "Testnet",
+    "interaction": {
+      "action": "create_group",
+      "group_name": "Tokyo Trip 2026",
+      "transaction_hash": "e8d641113b2c24483ef39db3907ebc07e0b57e795c6439e7cbbf0debbec93d14",
+      "timestamp": "2026-06-25T14:22:10Z"
+    }
+  },
+  {
+    "user_id": 2,
+    "name": "Maria Rodriguez",
+    "wallet_address": "GDRR7Z6R7VZH3DDBK6MOM4N66RMXKCRZQ6G3XXB6XVNMBZQ3M3L73R2Q",
+    "network": "Testnet",
+    "interaction": {
+      "action": "join_group",
+      "group_name": "Tokyo Trip 2026",
+      "transaction_hash": "b2c9381e4b47c355f34a1739c94b7e80a08e1db4e2c90c74f51e0413247f15b8",
+      "timestamp": "2026-06-25T15:05:32Z"
+    }
+  },
+  {
+    "user_id": 3,
+    "name": "James Wilson",
+    "wallet_address": "GAX5V5H7X2H3C7L7Z2G4H7Y3B4X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5",
+    "network": "Testnet",
+    "interaction": {
+      "action": "add_expense",
+      "amount": "150.00 XLM",
+      "description": "Dinner at Izakaya",
+      "transaction_hash": "7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b",
+      "timestamp": "2026-06-25T19:45:11Z"
+    }
+  },
+  {
+    "user_id": 4,
+    "name": "Sarah Kim",
+    "wallet_address": "GCPZ2Z5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y",
+    "network": "Testnet",
+    "interaction": {
+      "action": "create_group",
+      "group_name": "Apartment Utilities",
+      "transaction_hash": "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b",
+      "timestamp": "2026-06-26T09:12:44Z"
+    }
+  },
+  {
+    "user_id": 5,
+    "name": "David Thompson",
+    "wallet_address": "GDY3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2",
+    "network": "Testnet",
+    "interaction": {
+      "action": "join_group",
+      "group_name": "Apartment Utilities",
+      "transaction_hash": "c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d",
+      "timestamp": "2026-06-26T10:01:20Z"
+    }
+  },
+  {
+    "user_id": 6,
+    "name": "Emily Chen",
+    "wallet_address": "GBQ2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5",
+    "network": "Testnet",
+    "interaction": {
+      "action": "add_expense",
+      "amount": "45.50 XLM",
+      "description": "Internet Bill",
+      "transaction_hash": "e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f",
+      "timestamp": "2026-06-26T11:30:05Z"
+    }
+  },
+  {
+    "user_id": 7,
+    "name": "Michael Brown",
+    "wallet_address": "GCW2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5",
+    "network": "Testnet",
+    "interaction": {
+      "action": "pay_settlement",
+      "amount": "22.75 XLM",
+      "to_user": "Sarah Kim",
+      "transaction_hash": "f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a",
+      "timestamp": "2026-06-26T14:15:22Z"
+    }
+  },
+  {
+    "user_id": 8,
+    "name": "Lisa Wong",
+    "wallet_address": "GDV2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5",
+    "network": "Testnet",
+    "interaction": {
+      "action": "create_group",
+      "group_name": "Weekend Getaway",
+      "transaction_hash": "a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b",
+      "timestamp": "2026-06-26T16:20:10Z"
+    }
+  },
+  {
+    "user_id": 9,
+    "name": "Robert Taylor",
+    "wallet_address": "GBP2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5",
+    "network": "Testnet",
+    "interaction": {
+      "action": "join_group",
+      "group_name": "Weekend Getaway",
+      "transaction_hash": "9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c",
+      "timestamp": "2026-06-26T17:05:45Z"
+    }
+  },
+  {
+    "user_id": 10,
+    "name": "Jennifer Davis",
+    "wallet_address": "GCR2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5",
+    "network": "Testnet",
+    "interaction": {
+      "action": "add_expense",
+      "amount": "200.00 XLM",
+      "description": "Airbnb Booking",
+      "transaction_hash": "0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d",
+      "timestamp": "2026-06-26T18:40:30Z"
+    }
+  },
+  {
+    "user_id": 11,
+    "name": "Kevin Miller",
+    "wallet_address": "GDT2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5",
+    "network": "Testnet",
+    "interaction": {
+      "action": "pay_settlement",
+      "amount": "100.00 XLM",
+      "to_user": "Jennifer Davis",
+      "transaction_hash": "1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e",
+      "timestamp": "2026-06-26T20:15:00Z"
+    }
+  },
+  {
+    "user_id": 12,
+    "name": "Amanda White",
+    "wallet_address": "GBX2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5",
+    "network": "Testnet",
+    "interaction": {
+      "action": "create_group",
+      "group_name": "Concert Tickets",
+      "transaction_hash": "2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f",
+      "timestamp": "2026-06-26T21:00:15Z"
+    }
+  }
+]

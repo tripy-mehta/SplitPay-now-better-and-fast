@@ -94,7 +94,7 @@ export default function FeedbackPage() {
                   ))}
                 </div>
               </div>
-              <p className="text-ink/80 text-sm leading-relaxed mb-3">"{fb.comment}"</p>
+              <p className="text-ink/80 text-sm leading-relaxed mb-3">&quot;{fb.comment}&quot;</p>
               <p className="text-xs text-ink/40 text-right">{fb.date}</p>
             </div>
           ))}

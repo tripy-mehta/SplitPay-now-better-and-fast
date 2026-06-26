@@ -374,7 +374,13 @@ impl SplitPayContract {
     /// fully-covered expenses as settled. Requires `from`'s authorization
     /// (this is what triggers the Freighter signature popup on the
     /// frontend).
-    pub fn pay(env: Env, group_id: u64, from: Address, to: Address, amount: i128) -> Result<(), Error> {
+    pub fn pay(
+        env: Env,
+        group_id: u64,
+        from: Address,
+        to: Address,
+        amount: i128,
+    ) -> Result<(), Error> {
         from.require_auth();
 
         if amount <= 0 {

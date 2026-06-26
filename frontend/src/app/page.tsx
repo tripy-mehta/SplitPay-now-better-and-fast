@@ -74,7 +74,7 @@ export default function HomePage() {
           <p className="text-ink/60 max-w-md leading-relaxed">
             Log shared expenses with your group and settle every balance with the
             fewest possible transfers — instantly, in XLM, no matter what country
-            anyone's in.
+            anyone&apos;s in.
           </p>
         </section>
 

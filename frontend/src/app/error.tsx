@@ -19,7 +19,7 @@ export default function GlobalError({
       <div className="text-center max-w-sm">
         <p className="font-display text-2xl mb-2">Something went off the ledger.</p>
         <p className="text-sm text-ink/55 mb-6">
-          That wasn't supposed to happen. You can try again, or refresh the page.
+          That wasn&apos;t supposed to happen. You can try again, or refresh the page.
         </p>
         <button
           onClick={reset}

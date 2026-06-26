@@ -101,7 +101,7 @@ export function BalanceLedger({
 
       {allSettled ? (
         <p className="text-sm text-ink/50 py-6 text-center border border-dashed border-line rounded-lg">
-          Everyone's settled up. Log a new expense to start a fresh balance.
+          Everyone&apos;s settled up. Log a new expense to start a fresh balance.
         </p>
       ) : (
         <div className="divide-y divide-line border-y border-line">

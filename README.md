@@ -65,19 +65,13 @@ Below are screenshots showcasing the product UI, mobile responsive design, and c
 
 ---
 
-## Evidence and Proof (Level 4 Validation)
-
-10+ real users successfully connected Freighter, joined a group, logged an expense, and completed an on-chain settlement on testnet.
-
 ### User Feedback & Onboarding
 
 Users provided feedback through our Google Form. Their feedback directly influenced feature additions like Expense History and UI Error Handling.
 
-**[Google Form (Feedback Survey)]([https://docs.google.com/forms/d/e/1FAIpQLSc-placeholder-link-replace-me/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfxtqev2QzA2cNWe8CRB_pcMQf6qfOMhxhi_AAIPXytNJppJw/viewform?usp=publish-editor))**  
+**[Google Form (Feedback Survey)]([https://docs.google.com/forms/d/e/1FAIpQLSc-placeholder-link-replace-me/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfxtqev2QzA2cNWe8CRB_pcMQf6qfOMhxhi_AAIPXytNJppJw/viewform?usp=publish-editor)**  
 
-*(Note for judges: The exact Google form links are provided above. The form collects: Name, Email, Wallet Address, Network, Product Rating, and 3 custom questions: "Which feature did you like the most?", "What feature do you think is missing?", "Did you encounter any bugs or usability issues?")*
-
-### Proof of 10+ Users (On-Chain Interactions)
+### Proof of  Users (On-Chain Interactions)
 
 A complete, machine-readable log of these interactions with transaction hashes, timestamps, and on-chain evidence is provided in the **[`proof_of_interactions.json`](proof_of_interactions.json)** file in this repository.
 

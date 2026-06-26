@@ -73,8 +73,7 @@ Below are screenshots showcasing the product UI, mobile responsive design, and c
 
 Users provided feedback through our Google Form. Their feedback directly influenced feature additions like Expense History and UI Error Handling.
 
-**[Google Form (Feedback Survey)](https://docs.google.com/forms/d/e/1FAIpQLSc-placeholder-link-replace-me/viewform)**  
-**[Excel Sheet (Form Responses)](https://docs.google.com/spreadsheets/d/1B-placeholder-link-replace-me/edit)**
+**[Google Form (Feedback Survey)]([https://docs.google.com/forms/d/e/1FAIpQLSc-placeholder-link-replace-me/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfxtqev2QzA2cNWe8CRB_pcMQf6qfOMhxhi_AAIPXytNJppJw/viewform?usp=publish-editor))**  
 
 *(Note for judges: The exact Google form links are provided above. The form collects: Name, Email, Wallet Address, Network, Product Rating, and 3 custom questions: "Which feature did you like the most?", "What feature do you think is missing?", "Did you encounter any bugs or usability issues?")*
 

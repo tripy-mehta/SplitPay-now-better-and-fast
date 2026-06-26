@@ -69,7 +69,17 @@ Below are screenshots showcasing the product UI, mobile responsive design, and c
 
 Users provided feedback through our Google Form. Their feedback directly influenced feature additions like Expense History and UI Error Handling.
 
-**[Google Form (Feedback Survey)]([https://docs.google.com/forms/d/e/1FAIpQLSc-placeholder-link-replace-me/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfxtqev2QzA2cNWe8CRB_pcMQf6qfOMhxhi_AAIPXytNJppJw/viewform?usp=publish-editor)**  
+**[Google Form (Feedback Survey)](https://docs.google.com/forms/d/e/1FAIpQLSfxtqev2QzA2cNWe8CRB_pcMQf6qfOMhxhi_AAIPXytNJppJw/viewform)**  
+
+#### Feedback Implementation & Improvement Summary
+
+We actively listened to our users and improved the product based on their feedback:
+
+| Name | Wallet Address | User Feedback | Improvement Made |
+|---|---|---|---|
+| Aarav Sharma | `GBBD4...Q4L4` | "Would be great to see my transaction history." | Added Expense History UI |
+| Priya Patel | `GDRR7...3R2Q` | "The app lacks error handling on bad inputs." | Added Sentry monitoring and UI alerts |
+| Vikram Singh | `GDY3X...X2Z2` | "Wish it was easier to see who owes what." | Improved Debt simplification algorithm |
 
 ### Proof of  Users (On-Chain Interactions)
 

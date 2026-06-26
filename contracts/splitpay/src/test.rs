@@ -4,7 +4,7 @@ use super::*;
 use soroban_sdk::{testutils::Address as _, vec, Env, String};
 
 fn setup(env: &Env) -> (SplitPayContractClient, Address) {
-    let contract_id = env.register(SplitPayContract, ());
+    let contract_id = env.register_contract(None, crate::SplitPayContract);
     let client = SplitPayContractClient::new(env, &contract_id);
     let native = Address::generate(env);
     client.initialize(&native);
@@ -82,6 +82,7 @@ fn add_expense_and_read_balances_equal_split() {
 
     let balances = client.get_balances(&group_id);
 
+    extern crate std;
     let mut by_addr = std::collections::HashMap::new();
     for b in balances.iter() {
         by_addr.insert(b.member.clone(), b.net);

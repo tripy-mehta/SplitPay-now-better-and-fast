@@ -83,7 +83,7 @@ fn add_expense_and_read_balances_equal_split() {
     let balances = client.get_balances(&group_id);
 
     extern crate std;
-    let mut by_addr = std::collections::HashMap::new();
+    let mut by_addr = std::collections::BTreeMap::new();
     for b in balances.iter() {
         by_addr.insert(b.member.clone(), b.net);
     }

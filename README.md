@@ -1,115 +1,58 @@
 # SplitPay
 
-**Cross-border group expense settlement on Stellar.**
+A premium, production-ready decentralized cross-border group expense settlement dashboard powered by the Stellar Network and Soroban Smart Contracts. SplitPay features real-time logging, a debt-simplification algorithm, and native XLM settlements.
 
-## Live deployment
+---
 
-| | |
-|---|---|
-| Frontend (production) | [SplitPay Live App](https://split-pay-now-with-ease.vercel.app/) |
-| Contract ID (testnet) | `CAUSROV2RFVUWQCCWW7GQFCPIB7MBSLPBFKISUUBED6OHVCSVGCB2RYC` |
-| Demo video | [Watch Demo on Google Drive](https://drive.google.com/file/d/14GFumRM7NkBvjzj_LiD4gdWCOIdnYa3u/view?usp=sharing) |
-| Pitch Deck | [Download SplitPay.pptx](SplitPay.pptx) |
+## 1. Project Information
 
-## Description
+### Project Name
+**SplitPay** (Cross-border Group Expense Settlement)
 
-SplitPay lets a group log shared expenses and settle every balance with the minimum number of transfers — instantly, in native XLM, regardless of which country anyone in the group is in. Built for Stellar Builder Track, Level 5.
+### Project Overview
+SplitPay lets a group log shared expenses and settle every balance with the minimum number of transfers — instantly, in native XLM, regardless of which country anyone in the group is in. 
 
-## Level 5 Submission Checklist
-- ✅ **Public GitHub repository:** You're looking at it!
-- ✅ **Minimum 20+ meaningful commits:** History is available in the repository.
-- ✅ **Live deployed application:** See the "Live deployment" link above.
-- ✅ **PPT/Pitch deck link:** Included above in the deployment table.
-- ✅ **Demo video link:** Included above in the deployment table.
-- ✅ **Proof of 50+ users:** Found in `docs/proof_of_users.csv`.
-- ✅ **Screenshots of analytics or transaction activity:** Embedded below in the UI section.
-- ✅ **Updated README and documentation:** This file has been updated to reflect Level 5 requirements.
-- ✅ **User feedback iteration summary:** Detailed below, complete with git commit hashes linking to our product improvements.
+### Problem Statement
+Traditional cross-border group settlement systems are:
+- **Fragmented**: Splitwise-style apps solve the bookkeeping (who paid, who owes what) but settlement happens off-platform.
+- **Slow & Expensive**: International bank transfers and remittances take days and cost too much for small casual P2P transactions.
+- **Friction-heavy**: International student groups, remote teams, and travelers have no unified way to close out shared debt.
 
+### Solution Overview
+SplitPay solves these problems using:
+- **Instant Finality & Low Fees**: Leveraging the Stellar network to settle payments in seconds for fractions of a cent.
+- **On-chain Debt Simplification**: A Soroban smart contract computes the absolute minimum transfers needed to zero out the group.
+- **Native XLM Settlement**: Settle across borders instantly using Freighter.
+- **Frictionless Onboarding**: Generate 1-Click invite links to bring members into your smart contract group.
 
-## The problem
-
-Splitwise-style apps solve the bookkeeping (who paid, who owes what) but
-settlement still happens off-platform: bank transfers, Venmo, or an IOU that
-quietly never gets paid. That breaks down completely once a group spans
-countries — international student groups, remote teams, and friends who
-travel together have no fast, cheap, peer-to-peer way to actually close out
-a shared debt.
-
-## What SplitPay does
-
-1. A group logs shared expenses on-chain (who paid, how much, who's splitting it)
-2. A Soroban smart contract maintains the live ledger and computes each
-   member's net balance in real time
-3. When it's time to settle, the contract runs a **debt-simplification
-   algorithm** to compute the minimum set of transfers needed to zero out
-   the entire group — turning "5 people owe each other money" into one or
-   two clean transactions instead of N(N-1) one-to-one payments
-4. Each required payer signs their own transfer via Freighter; funds move
-   in native XLM and settle on Stellar in seconds
-
-## Why Stellar
-
-Stellar is built for moving value between people and regions instantly and
-cheaply — exactly the gap that breaks cross-border expense settlement today.
-This project also puts real programmable logic on top of that rail: the
-contract isn't just relaying a payment, it's computing an optimized
-multi-party settlement plan that a simple wallet-to-wallet transfer can't do
-on its own.
-
-## App Screenshots
-
-Below are screenshots showcasing the product UI, mobile responsive design, and core user flows:
+### Key Features
+- **Wallet Connection**: Dynamic authentication via Stellar Wallets Kit and Freighter.
+- **Group Ledgers**: Transparent expense logging directly on the Stellar testnet.
+- **Debt Optimization**: Algorithmically minimizes the number of required transfers to settle group debt.
+- **Analytics & Telemetry**: Built-in monitoring using PostHog and Sentry.
+- **Export to CSV**: Download group transaction history for accounting and bookkeeping.
 
 <div align="center">
-  <img src="images/landing%20page.png" alt="Landing Page" width="400"/>
-  <img src="images/creating%20group.png" alt="Creating Group" width="400"/>
-</div>
-<br/>
-<div align="center">
-  <img src="images/joinging%20grp.png" alt="Joining Group" width="400"/>
-  <img src="images/shared%20expense.png" alt="Shared Expense" width="400"/>
-</div>
-<br/>
-<div align="center">
-  <img src="images/expense%20history.png" alt="Expense History" width="400"/>
-  <img src="images/feedback%20summary.png" alt="Feedback Summary" width="400"/>
-</div>
-<br/>
-<div align="center">
-  <img src="images/responsive_ui.png" alt="Responsive UI" width="400"/>
-  <img src="images/analytics.png" alt="Analytics" width="400"/>
+  <img src="https://raw.githubusercontent.com/tripy-mehta/SplitPay-now-better-and-fast/main/images/responsive_ui.png" alt="Responsive UI" width="400"/>
+  <img src="https://raw.githubusercontent.com/tripy-mehta/SplitPay-now-better-and-fast/main/images/analytics.png" alt="Analytics" width="400"/>
 </div>
 
 ---
 
-### User Feedback & Onboarding (Level 5)
+## 2. Technology Stack
 
-Users provided feedback through our Google Form. We successfully onboarded **55+ users** on the Stellar Testnet. Their feedback directly influenced feature additions like Expense History, UI Error Handling, and our new CSV Export feature.
-
-**[Google Form (Feedback Survey)](https://docs.google.com/forms/d/e/1FAIpQLSdPXwp3m6S5sdG6vk3DQxljOp3ets36KnwmQ03jqYDA3LfNWQ/viewform?usp=publish-editor)**  
-
-#### Feedback Implementation & Improvement Summary
-
-We actively listened to our users and improved the product based on their feedback. Below is how we plan to evolve the project, along with the immediate improvements already shipped in this phase:
-
-| User Feedback | Improvement Made | Git Commit |
-|---|---|---|
-| "Would be great to see my transaction history." | Added Expense History UI | `e3b2a1c` (Previous phase) |
-| "The app lacks error handling on bad inputs." | Added Sentry monitoring and UI alerts | `f4d1e2b` (Previous phase) |
-| "Hard to invite non-crypto friends." | Added 1-Click Copy Invite Links | `a1b2c3d` (Previous phase) |
-| "Need to export our group expenses to CSV." | **[NEW]** Added CSV Export for Group Ledgers | [`6f70a90`](https://github.com/tripy-mehta/SplitPay-now-better-and-fast/commit/6f70a90) |
-
-### Proof of 50+ Users (On-Chain Interactions)
-
-To satisfy the Level 5 requirement, a complete, machine-readable log of **55 real users** with transaction hashes, timestamps, and on-chain evidence is provided in the **[`docs/proof_of_users.csv`](docs/proof_of_users.csv)** file in this repository. 
-
-*The CSV contains Names, Emails, Wallet Addresses, Actions, Amounts, Stellar Explorer Hashes, and Detailed Product Feedback.*
+| Component | Technologies & Tools |
+| :--- | :--- |
+| **Frontend** | Next.js 14, TailwindCSS, React |
+| **Smart Contracts** | Soroban Rust SDK, WebAssembly (Wasm) target |
+| **Web3 Libraries** | `@stellar/stellar-sdk` (v15.0.0), `@creit.tech/stellar-wallets-kit` |
+| **Telemetry & Quality** | PostHog (Analytics), Sentry (Monitoring) |
 
 ---
 
-## Architecture
+## 3. Architecture
 
+### System Architecture Diagram
 ```
 ┌─────────────────────┐         ┌──────────────────────────┐
 │   Next.js Frontend   │         │   Soroban Contract        │
@@ -118,70 +61,107 @@ To satisfy the Level 5 requirement, a complete, machine-readable log of **55 rea
 │  Tailwind UI         │         │  • Groups & membership     │
 │  PostHog analytics   │         │  • Expense log             │
 │  Sentry monitoring   │         │  • Balance calculation      │
-└─────────────────────┘         │  • Debt-simplified settle   │
-                                  └──────────────────────────┘
-                                              │
-                                              ▼
-                                  Stellar Asset Contract
-                                  (native XLM transfers)
+│  CSV Export Feature  │         │  • Settlement              │
+└─────────────────────┘         └──────────────────────────┘
 ```
 
-**Data flow for settlement** (the core technical piece):
-1. Frontend calls `compute_settlement(group_id)` — a read-only simulation,
-   no signature needed — which returns the minimal transfer plan
-2. Each payer in that plan calls `pay()`, which requires their Freighter
-   signature and transfers native XLM via the Stellar Asset Contract
-   interface
-3. Once every leg of the plan is confirmed, `mark_group_settled()` archives
-   the expense log and resets the active balance to zero
-
-See [`contracts/splitpay/src/lib.rs`](contracts/splitpay/src/lib.rs) for the
-full contract and [`contracts/splitpay/src/test.rs`](contracts/splitpay/src/test.rs)
-for unit tests covering the settlement math.
-
-## Tech stack
-
-- **Contract**: Rust + Soroban SDK, Stellar testnet
-- **Frontend**: Next.js 14 (App Router), TypeScript, Tailwind CSS
-- **Wallet**: Freighter via `@creit.tech/stellar-wallets-kit`
-- **Chain client**: `@stellar/stellar-sdk`
-- **Analytics**: PostHog
-- **Error monitoring**: Sentry
+### Folder Project Structure
+```
+SplitPay/
+├── contracts/                   # Soroban Rust Smart Contracts
+│   └── splitpay/
+│       ├── src/                 # Smart contract logic
+│       └── Cargo.toml
+├── frontend/                    # Next.js Frontend Application
+│   ├── src/
+│   │   ├── app/                 # Next.js App Router pages
+│   │   ├── components/          # React UI components
+│   │   ├── lib/                 # Contract integration & formatting
+│   │   └── hooks/               # Wallet connection hooks
+│   └── package.json
+├── docs/                        # Presentation & Verification documents
+└── README.md
+```
 
 ---
 
-## Getting started
+## 4. Setup and Installation
 
-Full step-by-step instructions (Rust install → contract deploy → frontend
-config → running locally → production deploy) are in **[DEPLOY.md](DEPLOY.md)**.
+### Prerequisites
+- Node.js 20+
+- Rust with `wasm32-unknown-unknown` target
+- Stellar CLI (`stellar`)
 
-Quick version, once prerequisites are installed:
-```bash
-# 1. Build, test, and deploy the contract
-cd contracts/splitpay && cargo test && cd ../..
-./scripts/deploy.sh
-# copy the printed contract ID + native token ID
-
-# 2. Configure and run the frontend
-cd frontend
-cp .env.example .env.local   # paste in the IDs from above
-npm install
-npm run dev
+### Environment Variables
+For local frontend development, copy `.env.example` to `.env.local` and add:
+```
+NEXT_PUBLIC_CONTRACT_ID=CAUSROV2RFVUWQCCWW7GQFCPIB7MBSLPBFKISUUBED6OHVCSVGCB2RYC
+NEXT_PUBLIC_NATIVE_TOKEN_ID=CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC
+NEXT_PUBLIC_NETWORK_PASSPHRASE="Test SDF Network ; September 2015"
+NEXT_PUBLIC_RPC_URL=https://soroban-testnet.stellar.org
+NEXT_PUBLIC_HORIZON_URL=https://horizon-testnet.stellar.org
 ```
 
-## Project structure
+### Run Locally Instructions
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   npm install
+   ```
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open `http://localhost:3000` in your browser. Install the **Freighter Wallet** extension and switch it to **Testnet**.
 
-```
-splitpay/
-├── contracts/splitpay/      # Soroban smart contract (Rust)
-│   ├── src/lib.rs           # Contract logic
-│   └── src/test.rs          # Unit tests
-├── frontend/                 # Next.js application
-│   ├── src/app/              # Pages (home, group detail, invite join)
-│   ├── src/components/       # UI components
-│   ├── src/lib/               # Contract client, wallet, analytics, formatting
-│   └── src/hooks/             # React state (wallet context)
-├── scripts/deploy.sh         # One-command testnet deploy
-├── DEPLOY.md                  # Full setup & deploy walkthrough
-└── docs/                      # Submission materials, user feedback summary
-```
+---
+
+## 5. Deployment Details
+
+- **Contract ID (Testnet)**: `CAUSROV2RFVUWQCCWW7GQFCPIB7MBSLPBFKISUUBED6OHVCSVGCB2RYC`
+- **Stellar Network**: Testnet
+- **Live App Deployment**: [SplitPay Live App](https://split-pay-now-with-ease.vercel.app/)
+- **Demo Video**: [Watch Demo on Google Drive](https://drive.google.com/file/d/14GFumRM7NkBvjzj_LiD4gdWCOIdnYa3u/view?usp=sharing)
+- **Pitch Deck**: [Download SplitPay.pptx](SplitPay.pptx)
+
+---
+
+## 6. Level 5 Submission Checklist
+
+- ✅ **Public GitHub repository:** You're looking at it!
+- ✅ **Minimum 20+ meaningful commits:** History is available in the repository.
+- ✅ **Live deployed application:** See the "Deployment Details" above.
+- ✅ **PPT/Pitch deck link:** Linked above.
+- ✅ **Demo video link:** Linked above.
+- ✅ **Proof of 50+ users:** Found in `docs/proof_of_users.csv`.
+- ✅ **Screenshots of analytics or transaction activity:** Embedded in Section 1.
+- ✅ **Updated README and documentation:** This file is actively structured for Level 5 requirements.
+- ✅ **User feedback iteration summary:** Detailed in Section 7, with commit hashes.
+
+---
+
+## 7. User Growth & Feedback Iteration
+
+Users provided feedback through our Google Form. We successfully onboarded **55+ users** on the Stellar Testnet. Their feedback directly influenced our most recent feature additions.
+
+**[Google Form (Feedback Survey)](https://docs.google.com/forms/d/e/1FAIpQLSdPXwp3m6S5sdG6vk3DQxljOp3ets36KnwmQ03jqYDA3LfNWQ/viewform?usp=publish-editor)**
+
+### Proof of 50+ Users
+To satisfy the Level 5 requirement, a complete log of **55 real users** with transaction hashes, timestamps, and on-chain evidence is provided in the **[`docs/proof_of_users.csv`](docs/proof_of_users.csv)** file in this repository.
+
+### Feedback Implementation & Improvement Summary
+
+We actively listened to our users and improved the product based on their feedback. Below are the improvements shipped during our iterations:
+
+| User Feedback | Improvement Made | Git Commit |
+|---|---|---|
+| "Would be great to see my transaction history." | Added Expense History UI | `e3b2a1c` (Previous phase) |
+| "The app lacks error handling on bad inputs." | Added Sentry monitoring and UI alerts | `f4d1e2b` (Previous phase) |
+| "Hard to invite non-crypto friends." | Added 1-Click Copy Invite Links | `a1b2c3d` (Previous phase) |
+| "Need to export our group expenses to CSV." | **[NEW]** Added CSV Export for Group Ledgers | [`6f70a90`](https://github.com/tripy-mehta/SplitPay-now-better-and-fast/commit/6f70a90) |
+
+---
+
+## 8. Monitoring and Analytics
+- **PostHog**: Integrated for user event telemetry and feature tracking.
+- **Sentry**: Active monitoring for UI crashes and unhandled Web3 exceptions.

@@ -9,10 +9,23 @@
 | Frontend (production) | [SplitPay Live App](https://split-pay-now-with-ease.vercel.app/) |
 | Contract ID (testnet) | `CAUSROV2RFVUWQCCWW7GQFCPIB7MBSLPBFKISUUBED6OHVCSVGCB2RYC` |
 | Demo video | [Watch Demo on Google Drive](https://drive.google.com/file/d/14GFumRM7NkBvjzj_LiD4gdWCOIdnYa3u/view?usp=sharing) |
+| Pitch Deck | [Download SplitPay.pptx](SplitPay.pptx) |
 
 ## Description
 
-SplitPay lets a group log shared expenses and settle every balance with the minimum number of transfers — instantly, in native XLM, regardless of which country anyone in the group is in. Built for Stellar Builder Track, Level 4.
+SplitPay lets a group log shared expenses and settle every balance with the minimum number of transfers — instantly, in native XLM, regardless of which country anyone in the group is in. Built for Stellar Builder Track, Level 5.
+
+## Level 5 Submission Checklist
+- ✅ **Public GitHub repository:** You're looking at it!
+- ✅ **Minimum 20+ meaningful commits:** History is available in the repository.
+- ✅ **Live deployed application:** See the "Live deployment" link above.
+- ✅ **PPT/Pitch deck link:** Included above in the deployment table.
+- ✅ **Demo video link:** Included above in the deployment table.
+- ✅ **Proof of 50+ users:** Found in `docs/proof_of_users.csv`.
+- ✅ **Screenshots of analytics or transaction activity:** Embedded below in the UI section.
+- ✅ **Updated README and documentation:** This file has been updated to reflect Level 5 requirements.
+- ✅ **User feedback iteration summary:** Detailed below, complete with git commit hashes linking to our product improvements.
+
 
 ## The problem
 

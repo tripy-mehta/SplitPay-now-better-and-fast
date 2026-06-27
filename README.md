@@ -62,6 +62,11 @@ Below are screenshots showcasing the product UI, mobile responsive design, and c
   <img src="images/expense%20history.png" alt="Expense History" width="400"/>
   <img src="images/feedback%20summary.png" alt="Feedback Summary" width="400"/>
 </div>
+<br/>
+<div align="center">
+  <img src="images/responsive_ui.png" alt="Responsive UI" width="400"/>
+  <img src="images/analytics.png" alt="Analytics" width="400"/>
+</div>
 
 ---
 

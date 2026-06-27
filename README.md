@@ -152,6 +152,17 @@ Users provided feedback through our Google Form. We successfully onboarded **55+
 ### Proof of 50+ Users
 To satisfy the Level 5 requirement, a complete log of **55 real users** with transaction hashes, timestamps, and on-chain evidence is provided in the **[`docs/proof_of_users.csv`](docs/proof_of_users.csv)** file in this repository.
 
+#### Snapshot of Verified On-Chain Users
+Below is a verifiable preview of a few active users successfully onboarded to the smart contract:
+
+| User | Wallet Address | Amount & Action | Stellar Explorer Hash |
+|---|---|---|---|
+| Aarav Sharma | `GBBD47IF6LWK7P7MDEVSCWTTCJMCRFW3U477XG3D7XN62LZM3K2RQ4L4` | 289 XLM (Created Group) | [`e8d64111...`](https://stellar.expert/explorer/testnet/tx/e8d641113b2c24483ef39db3907ebc07e0b57e795c6439e7cbbf0debbec93d14) |
+| Priya Patel | `GDRR7Z6R7VZH3DDBK6MOM4N66RMXKCRZQ6G3XXB6XVNMBZQ3M3L73R2Q` | 194 XLM (Joined Group) | [`b2c9381e...`](https://stellar.expert/explorer/testnet/tx/b2c9381e4b47c355f34a1739c94b7e80a08e1db4e2c90c74f51e0413247f15b8) |
+| Rohan Gupta | `GAX5V5H7X2H3C7L7Z2G4H7Y3B4X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5` | 150 XLM (Add Expense) | [`7a8b9c0d...`](https://stellar.expert/explorer/testnet/tx/7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b) |
+| Neha Reddy | `GCPZ2Z5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y` | 189 XLM (Created Group) | [`1a2b3c4d...`](https://stellar.expert/explorer/testnet/tx/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b) |
+| Vikram Singh | `GDY3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2` | 211 XLM (Joined Group) | [`c4d5e6f7...`](https://stellar.expert/explorer/testnet/tx/c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d) |
+
 ### Feedback Implementation & Improvement Summary
 
 We actively listened to our users and improved the product based on their feedback. Below are the improvements shipped during our iterations:

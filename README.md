@@ -33,6 +33,9 @@ SplitPay solves these problems using:
 - **Export to CSV**: Download group transaction history for accounting and bookkeeping.
 
 <div align="center">
+  <img src="https://raw.githubusercontent.com/tripy-mehta/SplitPay-now-better-and-fast/main/images/landing%20page.png" alt="Landing Page" width="400"/>
+  <img src="https://raw.githubusercontent.com/tripy-mehta/SplitPay-now-better-and-fast/main/images/creating%20group.png" alt="Sign Up / Create Group" width="400"/>
+  <br/>
   <img src="https://raw.githubusercontent.com/tripy-mehta/SplitPay-now-better-and-fast/main/images/responsive_ui.png" alt="Responsive UI" width="400"/>
   <img src="https://raw.githubusercontent.com/tripy-mehta/SplitPay-now-better-and-fast/main/images/analytics.png" alt="Analytics" width="400"/>
 </div>

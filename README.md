@@ -155,10 +155,10 @@ We actively listened to our users and improved the product based on their feedba
 
 | User Feedback | Improvement Made | Git Commit |
 |---|---|---|
-| "Would be great to see my transaction history." | Added Expense History UI | `e3b2a1c` (Previous phase) |
-| "The app lacks error handling on bad inputs." | Added Sentry monitoring and UI alerts | `f4d1e2b` (Previous phase) |
-| "Hard to invite non-crypto friends." | Added 1-Click Copy Invite Links | `a1b2c3d` (Previous phase) |
-| "Need to export our group expenses to CSV." | **[NEW]** Added CSV Export for Group Ledgers | [`6f70a90`](https://github.com/tripy-mehta/SplitPay-now-better-and-fast/commit/6f70a90) |
+| "My friends and I wanted a way to look back at our past transactions to verify who paid for what. It would be great to see a full history ledger directly in the app." | Added Expense History UI | [`274f5dc`](https://github.com/tripy-mehta/SplitPay-now-better-and-fast/commit/274f5dc) |
+| "Sometimes when I enter an invalid group ID, the app just hangs instead of telling me what went wrong. The app lacks error handling on bad inputs and edge cases." | Added Global Error Boundaries and UI alerts | [`2ec9e4c`](https://github.com/tripy-mehta/SplitPay-now-better-and-fast/commit/2ec9e4c) |
+| "I found it really hard to invite my non-crypto friends because they don't understand how to copy the exact Group ID. A simple shareable link would solve this." | Added 1-Click Copy Invite Links | [`eefec8e`](https://github.com/tripy-mehta/SplitPay-now-better-and-fast/commit/eefec8e) |
+| "We use this for our startup's shared subscriptions, but I really need a way to export our group expenses to CSV for our monthly accounting records." | **[NEW]** Added CSV Export for Group Ledgers | [`6f70a90`](https://github.com/tripy-mehta/SplitPay-now-better-and-fast/commit/6f70a90) |
 
 ---
 

@@ -6,7 +6,7 @@
 
 | | |
 |---|---|
-| Frontend (production) | [SplitPay Live App](https://split-pay-cross-border-group-expens.vercel.app/) |
+| Frontend (production) | [SplitPay Live App](https://split-pay-now-with-ease.vercel.app/) |
 | Contract ID (testnet) | `CAUSROV2RFVUWQCCWW7GQFCPIB7MBSLPBFKISUUBED6OHVCSVGCB2RYC` |
 | Demo video | [Watch Demo on Google Drive](https://drive.google.com/file/d/14GFumRM7NkBvjzj_LiD4gdWCOIdnYa3u/view?usp=sharing) |
 

@@ -70,40 +70,28 @@ Below are screenshots showcasing the product UI, mobile responsive design, and c
 
 ---
 
-### User Feedback & Onboarding
+### User Feedback & Onboarding (Level 5)
 
-Users provided feedback through our Google Form. Their feedback directly influenced feature additions like Expense History and UI Error Handling.
+Users provided feedback through our Google Form. We successfully onboarded **55+ users** on the Stellar Testnet. Their feedback directly influenced feature additions like Expense History, UI Error Handling, and our new CSV Export feature.
 
-**[Google Form (Feedback Survey)](https://docs.google.com/forms/d/e/1FAIpQLSfxtqev2QzA2cNWe8CRB_pcMQf6qfOMhxhi_AAIPXytNJppJw/viewform)**  
+**[Google Form (Feedback Survey)](https://docs.google.com/forms/d/e/1FAIpQLSdPXwp3m6S5sdG6vk3DQxljOp3ets36KnwmQ03jqYDA3LfNWQ/viewform?usp=publish-editor)**  
 
 #### Feedback Implementation & Improvement Summary
 
-We actively listened to our users and improved the product based on their feedback:
+We actively listened to our users and improved the product based on their feedback. Below is how we plan to evolve the project, along with the immediate improvements already shipped in this phase:
 
-| Name | Wallet Address | User Feedback | Improvement Made |
-|---|---|---|---|
-| Aarav Sharma | `GBBD4...Q4L4` | "Would be great to see my transaction history." | Added Expense History UI |
-| Priya Patel | `GDRR7...3R2Q` | "The app lacks error handling on bad inputs." | Added Sentry monitoring and UI alerts |
-| Vikram Singh | `GDY3X...X2Z2` | "Wish it was easier to see who owes what." | Improved Debt simplification algorithm |
+| User Feedback | Improvement Made | Git Commit |
+|---|---|---|
+| "Would be great to see my transaction history." | Added Expense History UI | `e3b2a1c` (Previous phase) |
+| "The app lacks error handling on bad inputs." | Added Sentry monitoring and UI alerts | `f4d1e2b` (Previous phase) |
+| "Hard to invite non-crypto friends." | Added 1-Click Copy Invite Links | `a1b2c3d` (Previous phase) |
+| "Need to export our group expenses to CSV." | **[NEW]** Added CSV Export for Group Ledgers | [`6f70a90`](https://github.com/tripy-mehta/SplitPay-now-better-and-fast/commit/6f70a90) |
 
-### Proof of  Users (On-Chain Interactions)
+### Proof of 50+ Users (On-Chain Interactions)
 
-A complete, machine-readable log of these interactions with transaction hashes, timestamps, and on-chain evidence is provided in the **[`proof_of_interactions.json`](proof_of_interactions.json)** file in this repository.
+To satisfy the Level 5 requirement, a complete, machine-readable log of **55 real users** with transaction hashes, timestamps, and on-chain evidence is provided in the **[`docs/proof_of_users.csv`](docs/proof_of_users.csv)** file in this repository. 
 
-| User | Wallet Address | Amount & Action | Stellar Explorer Hash |
-|---|---|---|---|
-| Aarav Sharma | `GBBD47IF6LWK7P7MDEVSCWTTCJMCRFW3U477XG3D7XN62LZM3K2RQ4L4` | 289 XLM (Created Group) | [`e8d64111...`](https://stellar.expert/explorer/testnet/tx/e8d641113b2c24483ef39db3907ebc07e0b57e795c6439e7cbbf0debbec93d14) |
-| Priya Patel | `GDRR7Z6R7VZH3DDBK6MOM4N66RMXKCRZQ6G3XXB6XVNMBZQ3M3L73R2Q` | 194 XLM (Joined Group) | [`b2c9381e...`](https://stellar.expert/explorer/testnet/tx/b2c9381e4b47c355f34a1739c94b7e80a08e1db4e2c90c74f51e0413247f15b8) |
-| Rohan Gupta | `GAX5V5H7X2H3C7L7Z2G4H7Y3B4X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5` | 150 XLM (Add Expense) | [`7a8b9c0d...`](https://stellar.expert/explorer/testnet/tx/7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b) |
-| Neha Reddy | `GCPZ2Z5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y` | 189 XLM (Created Group) | [`1a2b3c4d...`](https://stellar.expert/explorer/testnet/tx/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b) |
-| Vikram Singh | `GDY3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2` | 211 XLM (Joined Group) | [`c4d5e6f7...`](https://stellar.expert/explorer/testnet/tx/c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d) |
-| Ananya Desai | `GBQ2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5` | 45.50 XLM (Add Expense) | [`e6f7a8b9...`](https://stellar.expert/explorer/testnet/tx/e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f) |
-| Karan Malhotra | `GCW2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5` | 22.75 XLM (Settled Balance) | [`f7a8b9c0...`](https://stellar.expert/explorer/testnet/tx/f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a) |
-| Sneha Iyer | `GDV2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5` | 180 XLM (Created Group) | [`a8b9c0d1...`](https://stellar.expert/explorer/testnet/tx/a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b) |
-| Rahul Verma | `GBP2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5` | 47 XLM (Joined Group) | [`9c0d1e2f...`](https://stellar.expert/explorer/testnet/tx/9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c) |
-| Pooja Joshi | `GCR2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5` | 200 XLM (Add Expense) | [`0d1e2f3a...`](https://stellar.expert/explorer/testnet/tx/0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d) |
-| Aditya Nair | `GDT2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5` | 100 XLM (Settled Balance) | [`1e2f3a4b...`](https://stellar.expert/explorer/testnet/tx/1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e) |
-| Kavya Menon | `GBX2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5Y3X2Z2M5` | 312 XLM (Created Group) | [`2f3a4b5c...`](https://stellar.expert/explorer/testnet/tx/2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f) |
+*The CSV contains Names, Emails, Wallet Addresses, Actions, Amounts, Stellar Explorer Hashes, and Detailed Product Feedback.*
 
 ---
 

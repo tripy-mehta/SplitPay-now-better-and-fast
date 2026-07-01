@@ -148,11 +148,10 @@ NEXT_PUBLIC_HORIZON_URL=https://horizon-testnet.stellar.org
 Users provided feedback through our Google Form. We successfully onboarded **55+ users** on the Stellar Testnet. Their feedback directly influenced our most recent feature additions.
 
 **[Google Form (Feedback Survey)](https://docs.google.com/forms/d/e/1FAIpQLSdPXwp3m6S5sdG6vk3DQxljOp3ets36KnwmQ03jqYDA3LfNWQ/viewform?usp=publish-editor)**
+📊 **[View User Feedback Responses (Google Sheet)](https://docs.google.com/spreadsheets/d/1atDQKWoioGIpgH9nq1LM1jPObQxs1L8aISxIC7t-91o/edit?usp=sharing)**
 
 ### Proof of 50+ Users
 To satisfy the Level 5 requirement, a complete log of **55 real users** with their names, wallet addresses, ratings, and detailed feedback is publicly available in our exported Google Form response sheet:
-
-📊 **[View User Feedback Responses (Google Sheet)](https://docs.google.com/spreadsheets/d/1atDQKWoioGIpgH9nq1LM1jPObQxs1L8aISxIC7t-91o/edit?usp=sharing)**
 
 ### Feedback Implementation & Improvement Summary
 
